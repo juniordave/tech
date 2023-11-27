@@ -40,11 +40,21 @@
                          <img src="assets/image-14.png" width="165px" height="74px" class="logo" />
                     </div>
                     <div style="display: flex; justify-content: center; padding-top: 44px;">
-                         <i class="fa fa-bars" style="font-size:24px; color: rgb(0, 0, 0);"></i>
+                         <i class="fa fa-bars" id="menuIcon"  style="font-size:24px; color: rgb(0, 0, 0);" onclick="toggleNav()"></i>
                     </div>
                </div>
 
-               <div class="top-nav" id="mytop-nav">
+               <div class="top-nav mbl-nav" id="myTop-nav" style="display: none;">
+                    <!-- Include your menu items here -->
+                    <!-- <i class="fa fa-times close-btn" onclick="toggleCloseNav()"></i> -->
+                    <a class="active" href="#home" onclick="scrollToSection('home')">Home</a>
+                    <a href="#home" onclick="scrollToSection('features')">Features</a>
+                    <a href="#services" onclick="scrollToSection('services')">Services</a>
+                    <a href="#technologies" onclick="scrollToSection('technologies')">Technologies</a>
+                    <a href="#contactus" onclick="scrollToSection('contactus')">Contact Us</a>
+                </div>
+
+               <div class="top-nav" id="myTop-nav">
                     <div>
                          <img src="assets/image-14.png" width="165px" height="74px" class="logo" />
                     </div>
@@ -63,7 +73,7 @@
                     <div class="section-1-content">
                          <span>FinTech Software<br /> Development with<span style="color: green;">.doCode<br /> <span
                                         style="color: #0077AC;">Team</span><br />
-                                   <button class="section-1-button">Contact Us</button>
+                                   <button class="section-1-button" onclick="scrollToSection('contactus')">Contact Us</button>
                               </span>
                          </span>
                     </div>
@@ -648,13 +658,13 @@
                                              <div class="ore" style="margin: 20px 0 0 0; font-size: 20px;"><label>Profit
                                                        rate</label>&nbsp;&nbsp;&nbsp;<input type="text"
                                                        placeholder="7.5%" class="form-control"
-                                                       style="width: 55px;height: 20px;padding: 13px;">&nbsp;&nbsp;&nbsp;*starts
+                                                       style="width: 65px;height: 20px;padding: 13px;">&nbsp;&nbsp;&nbsp;*starts
                                                   from 4.5%</div>
                                              <br><br><br>
                                              <div class="ore"><label style="font-size: 20px;">I
                                                        need</label>&nbsp;&nbsp;&nbsp;<input type="text"
                                                        placeholder="AED 30000" class="form-control"
-                                                       style="width: 80px;height: 20px;padding: 14px;"></div><br><br>
+                                                       style="width: 120px;height: 20px;padding: 14px;"></div><br><br>
 
                                              <input type="range">
                                              <div class="yea"><span>AED 1000</span><span class="ten">AED 1000000</span>
@@ -662,7 +672,7 @@
                                              <div class="ore"><label style="font-size: 20px;">I will repay
                                                        in</label>&nbsp;&nbsp;&nbsp;<input type="text"
                                                        placeholder="30 months" class="form-control"
-                                                       style="width: 80px;height: 20px;padding: 14px;">
+                                                       style="width: 118px;height: 20px;padding: 14px;">
                                              </div><br><br>
 
                                              <input type="range">

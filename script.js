@@ -40,14 +40,11 @@ if (activeButton) {
     activeButton.classList.add('active');
 }
 
-function myFunction() {
-    var x = document.getElementById("mytop-nav");
-    if (x.className === "top-nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "top-nav";
-    }
-  }
+function toggleNav() {
+  var nav = document.getElementById("myTop-nav");
+  nav.style.display = (nav.style.display === "none" || nav.style.display === "") ? "block" : "none";
+}
+
 
   function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
@@ -57,14 +54,6 @@ function myFunction() {
 }
 
 
-// $(function() {
-//     $("li").click(function() {
-//        // remove classes from all
-//        $("li").removeClass("active");
-//        // add class to the one we clicked
-//        $(this).addClass("active");
-//     });
-//  });
 $('#myTab a').on('shown.bs.tab', function (e) {
     // Remove active class from all tabs
     $('#myTab a').removeClass('active');
