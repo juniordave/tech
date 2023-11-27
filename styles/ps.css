@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 !important;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.h {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ps-section-1 {
+    padding: 50px;
+}
+
+.ps-section-1-htag {
+    color: #02214D;
+    font-family: Work Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.sidenav {
+    width: 200px;
+    height: auto;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /* width: 82%; */
+}
+
+.sidenav a {
+    padding: 15px 8px 15px 7px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #4F4F4F;
+    display: block;
+    transition: 0.3s;
+    border-top: 1px solid #E0E0E0;
+    width: 86%;
+}
+
+.sidenav a:hover {
+    background-color: #ffffff;
+    color: #032555;
+    border-left: 2px solid #032555;
+}
+
+.sidenav a:focus {
+    color: #032555;
+    border-left: 2px solid #032555;
+}
+
+.sidenav a.active {
+    color: #032555;
+    border-left: 2px solid #032555;
+}
+
+.accordion-btn {
+    border-top: 1px #4F4F4F;
+}
+
+.ps-content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+}
+
+.img-vector {
+    display: flex;
+    height: 442px;
+    width: 490px;
+    transform: rotate(339deg);
+    justify-content: end;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: -180px;
+    margin-left: 660px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    z-index: 1;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.accordion-show-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.accordion-show-content-grid {
+    padding: 54px;
+    text-align: end;
+    font-weight: 500;
+}
+
+.accordion-show-content-grid-rectangle {
+    color: #1B6CE1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    border: 1px #1B6CE1 solid;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 24px 0px;
+    align-items: center;
+}
+.accordion{
+    display: none;
+}
+/* Mobile View  */
+@media screen and (max-width:600px) {
+    .accordion{
+        display: block;
+    }
+    
+    .ps-section-1-htag {
+        font-size: 23px;
+        padding-bottom: 30px;
+   }
+   .ps-D-view{
+    display: none;
+   }
+   .sidenav{
+    display: none;
+   }
+   .content{
+    display: none;
+   }
+}

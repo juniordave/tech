@@ -1,0 +1,282 @@
+* {
+     margin: 0;
+     padding: 0;
+     height: auto;
+}
+
+body {
+     font-family: 'Ubuntu', sans-serif;
+     margin: 0 !important;
+}
+
+p {
+     font-family: 'Ubuntu', sans-serif;
+
+}
+
+.h {
+     font-family: 'Ubuntu', sans-serif;
+}
+
+/***
+Bootstrap4 Card with Tabs by @mdeuerlein
+***/
+.taca {
+     background-color: #f4f4f4;
+     /* border: 1px solid rgba(0, 34, 51, 0.1); */
+     /* box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05); */
+     border-radius: 0.15rem;
+     border: none;
+}
+
+/* Tabs Card */
+.tab-card {
+     border: none;
+}
+
+.tab-card-header {
+     background: none;
+     border: none;
+}
+
+/* Default mode */
+.tab-card-header>.nav-tabs {
+     border: none;
+     margin: 0px;
+}
+
+.tab-card-header>.nav-tabs>li {
+     margin-right: 2px;
+     border: none;
+}
+
+.tab-card-header>.nav-tabs>li>a {
+     border: none;
+     margin-right: 0;
+     color: #737373;
+     padding: 2px 15px;
+}
+
+.tab-card-header>.nav-tabs>li>a.show {
+     border-bottom: 2px solid #007bff;
+     color: #007bff;
+     border: none;
+}
+
+.tab-card-header>.nav-tabs>li>a:hover {
+     color: #007bff;
+     border: none;
+}
+
+
+.tab-card-header>.tab-content {
+     padding-bottom: 0;
+}
+
+.we {
+     margin: 0 0 50px 0;
+}
+
+.fcol {
+     background-color: #f4f4f4;
+}
+
+.scol {
+     background-color: #5098ff;
+}
+
+input[type="range"] {
+     /* removing default appearance */
+     -webkit-appearance: none;
+     appearance: none;
+     /* creating a custom design */
+     width: 100%;
+     cursor: pointer;
+     outline: none;
+     /*  slider progress trick  */
+     overflow: hidden;
+     border-radius: 16px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+     height: 15px;
+     background: #ccc;
+     border-radius: 16px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+     height: 15px;
+     background: #ccc;
+     border-radius: 16px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+     /* removing default appearance */
+     -webkit-appearance: none;
+     appearance: none;
+     /* creating a custom design */
+     height: 15px;
+     width: 15px;
+     background-color: #4b0505;
+     border-radius: 50%;
+     border: 2px solid rgb(10, 4, 1);
+     /*  slider progress trick  */
+     box-shadow: -407px 0 0 400px rgb(6, 2, 0);
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+     height: 15px;
+     width: 15px;
+     background-color: #fff;
+     border-radius: 50%;
+     border: 1px solid #f50;
+     /*  slider progress trick  */
+     box-shadow: -407px 0 0 400px #f50;
+}
+
+.range {
+     display: flex;
+     align-items: center;
+     max-width: 500px;
+     height: 4rem;
+     width: 80%;
+     background: #fff;
+     padding: 0px 10px;
+}
+
+.cal {
+     font-size: 13px;
+     font-weight: 700;
+     color: #11228c;
+}
+
+.yea {
+     position: relative;
+}
+
+.ten {
+     position: absolute;
+     right: 0;
+}
+
+.ore {
+     display: inline-flex;
+}
+
+.scol {
+     text-align: center;
+}
+
+.ed {
+     margin: 40px;
+}
+.cal-chart-content{
+     margin-top: 116px;
+     font-size: 24px;
+}
+.pie {
+     width: 243px;
+     height: 218px;
+     border-radius: 50%;
+     background: #020b45;
+     margin: 80px 0px 12px 13px;
+}
+.cal-new-btn{
+     border-radius: 20px;
+     background-color: #020b45;
+     color: white;
+     font-size: 14px;
+     padding: 2px 10px;
+}
+.ca {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: 110px;
+}
+
+img {
+     margin: 20px;
+}
+
+.sd a {
+     position: absolute;
+     bottom: 0;
+     text-decoration: none;
+}
+
+.sd {
+     height: 26em !important;
+     width: 25em;
+     padding: 15px;
+     box-shadow: 0px 0px white;
+}
+
+.fr {
+     color: white;
+     position: relative;
+}
+
+.fr h1 {
+     font-size: 5rem;
+}
+
+
+
+.imk {
+     width: 100%;
+     height: 50vh;
+     position: absolute;
+     right: -80vh;
+     top: -16vh;
+}
+
+.fu .a {
+     vertical-align: baseline;
+     position: relative;
+     top: 4vh;
+}
+
+.fu {
+     display: inline-flex;
+}
+
+.cal-card {
+     border: none;
+     overflow: hidden;
+}
+
+.cal-section-1-htag {
+     color: #02214D;
+     font-family: Work Sans !important;
+     font-size: 55px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+}
+
+.card-header-tabs {
+     font-size: 24px;
+     border: none;
+}
+
+.card-header-tabs:active {
+     color: black;
+}
+
+.cal-card {
+     margin-top: 51px;
+}
+@media screen and (max-width:600px) {
+     .cal-section-1-htag {
+          font-size: 38px;
+     }
+     .pie{
+          margin: 80px 0px 12px 46px;
+     }
+}

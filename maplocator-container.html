@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/mapcontainer.css">
+    <title>Maplocator</title>
+</head>
+
+<body>
+    <div class="Container-atmlocator">
+        <div class="formcard1">
+            <form>
+                <span>
+                    <h2 class="formheading">Branch/ATM Locator</h2>
+                </span>
+
+                <span class="dropdownbox">
+                    <select class="select-city dropdown" name="country">
+                        <option value="default">Select city</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Jebel Ali">Jebel Ali</option>
+                        <option value="Abu Dhabi">Abu Dhabi</option>
+                        <option value="Sharjah">Sharjah</option>
+                        <option value="Fujairah">Fujairah</option>
+                    </select>
+                    <img class="gislocation" src="assets\gis-location.png" alt="gis:location" />
+                </span>
+
+                <span class="checkboxes">
+                    <input type="checkbox" id="box1" name="box1" value="All">
+                    <label for="box1"> All </label>
+                    <input type="checkbox" id="box2" name="box2" value="Branches">
+                    <label for="vehicle2">Branches</label>
+                    <input type="checkbox" id="box3" name="box3" value="ATM">
+                    <label for="vehicle3">ATM</label>
+                </span>
+
+                <p class="searchresults"> 116 location found </p>
+                <p class="subtopic">Branches</p>
+                <p>CBD Elite Lounge</p>
+                <p class="subtopic">Islamic banking</p>
+                <p>Extended hours</p>
+                <p>Buisness banking</p>
+                <p class="subtopic">ATMs</p>
+                <p>Inside lobby</p>
+                <p>Cash Deposit</p>
+                <p>24 Hours</p>
+
+            </form>
+        </div>
+        <img class="map" src="assets/rectangle-17.png" alt="" />
+    </div>
+</body>
+
+</html>

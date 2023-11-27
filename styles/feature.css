@@ -1,0 +1,124 @@
+* {
+     margin: 0;
+     padding: 0;
+     height: auto;
+}
+
+body {
+     font-family: 'Ubuntu', sans-serif;
+     margin: 0 !important;
+}
+
+p {
+     font-family: 'Ubuntu', sans-serif;
+
+}
+
+.h {
+     font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+     background-color: white;
+}
+
+.ca {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* position: relative; */
+     top: 50px;
+}
+
+img {
+     margin: 20px;
+}
+
+
+
+.fr {
+     color: white;
+}
+
+.fr h1 {
+     display: inline-flex;
+     font-size: 5rem;
+}
+
+.feature-section {
+     padding-top: 0px;
+     margin-top: -70px;
+}
+
+.feature-section-1-htag {
+     color: #02214D;
+     font-family: Work Sans;
+     font-size: 55px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+     display: flex;
+     justify-content: end;
+     padding: 59px;
+}
+
+.feature-card-section {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+}
+
+.feature-card a {
+     position: absolute;
+     bottom: 0;
+     text-decoration: none;
+}
+
+.feature-card {
+     height: 24em !important;
+     width: 320px;
+     padding: 15px;
+     box-shadow: 0px 0px white;
+}
+
+.feature-card:hover {
+     margin: -72px 0px 0px 0px;
+     cursor: pointer;
+     box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.features-grid {
+     padding: 8px;
+}
+
+
+/* Mobile View  */
+@media screen and (max-width:600px) {
+     .feature-section-1-htag {
+          color: #02214D;
+          font-family: Work Sans;
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          display: flex;
+          justify-content: end;
+          padding: 10px;
+     }
+
+     .feature-card-section {
+          display: block;
+     }
+
+     .features-grid {
+          padding: 46px 0 0 0;
+     }
+
+     .container {
+          padding: 29px;
+     }
+     .feature-section {
+         
+          margin-top: 0px;
+     }
+}

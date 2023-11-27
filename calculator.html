@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/calculator.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js" rel="stylesheet"
+    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section>
+
+    <div>
+      <h1 class="cal-section-1-htag"><span style="margin-right: 30px;"> — </span>Calculator</h1>
+      <div class="card cal-card">
+        <div class="row">
+
+          <div class="col-md-8 fcol">
+            <div class="card taca mt-3 tab-card">
+              <div class="card-header tab-card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" active>
+                    <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One"
+                      aria-selected="true">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two"
+                      aria-selected="false">Home Finance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three"
+                      aria-selected="false">Vehicle Finance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="four"
+                      aria-selected="false">Quick Finance</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                  <div class="ore" style="margin: 20px 0 0 0; font-size: 20px;"><label>Profit rate</label>&nbsp;&nbsp;&nbsp;<input
+                      type="text" placeholder="7.5%" class="form-control"
+                      style="width: 55px;height: 20px;padding: 13px;">&nbsp;&nbsp;&nbsp;*starts from 4.5%</div>
+                  <br><br><br>
+                  <div class="ore"><label style="font-size: 20px;">I need</label>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="AED 30000"
+                      class="form-control" style="width: 80px;height: 20px;padding: 14px;"></div><br><br>
+
+                  <input type="range">
+                  <div class="yea"><span>AED 1000</span><span class="ten">AED 1000000</span></div><br><br>
+                  <div class="ore"><label style="font-size: 20px;">I will repay in</label>&nbsp;&nbsp;&nbsp;<input type="text"
+                      placeholder="30 months" class="form-control" style="width: 80px;height: 20px;padding: 14px;">
+                  </div><br><br>
+
+                  <input type="range">
+                  <div class="yea"><span>1Year</span><span class="ten">10 Years</span></div><br><br>
+                  *Hint Message
+                  <p class="cal"><span><img src="./assets/orioncalls-1.png" alt="" height="10rem" width="10rem">Request
+                      Call Back</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      style="border-left: 1px solid #000;">&nbsp;&nbsp;&nbsp;&nbsp;Learn More</span></p>
+                </div>
+                <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                  <h5 class="card-title">Tab Card Two</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                  <h5 class="card-title">Tab Card Three</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="tab-pane fade p-3" id="four" role="tabpanel" aria-labelledby="four-tab">
+                  <h5 class="card-title">Tab Card Three</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 scol">
+            <div class="row ed">
+              <div class="col-md-6">
+                <!-- <div id="chartContainer" style="height: 100px; width: 100%;"></div> -->
+                <div class="pie" style="background-image:linear-gradient(to right, transparent 50%, #dceaff 0);"></div>
+
+
+              </div>
+              <div class="col-md-6 cal-chart-content">
+                <label style="margin-top: 116px; font-weight: 200;">Profit rate (7.5%) <br><span style="font-weight: 500;">6000</span></label><br>
+                <label style="font-weight: 200;">Total Repay <br><span style="font-weight: 500;">36000</span></label>
+              </div>
+            </div>
+
+            <button style="background-color: #020b45;color: white;padding: 8px 100px; width: 91%; font-size: 17px;" class="btn">ApplyNow
+              &nbsp;&nbsp;&nbsp;></button><br>
+            <span>*Hint Message</span>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: linear-gradient(112deg, #01204C 2.86%, #1A6CE0 87.34%);
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px 70px 0px 70px;
+    /* text-align: left; */
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+.footerlinks {
+    padding: 0 !important;
+}
+
+.footermenu {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerpara {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.5em;
+}
+
+.footerlinks {
+    line-height: 1.111em;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+.last {
+    margin-bottom: 24px;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: inherit;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    opacity: 70%;
+}
+
+.menu1:hover,
+.menu2:hover,
+.menu3:hover {
+    opacity: 100%;
+
+}
+
+.menu1:hover::after,
+.menu2:hover::after,
+.menu3:hover::after {
+    opacity: 70%;
+}
+.foot-menu-head{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+
+    footer {
+        padding: 40px 16px 10px 16px;
+        display: block;
+    }
+.foot-menu-head{
+    display: block;
+    font-size: 28px;
+    color: white;
+    padding-bottom: 30px;
+
+}
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hover-underline-animation::after {
+        width: 0%;
+    }
+}

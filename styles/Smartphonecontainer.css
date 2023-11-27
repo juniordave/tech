@@ -1,0 +1,135 @@
+* {
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-smartphones {
+    position: relative;
+    height: 700px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.phone-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.phone-head-content {
+    color: #02214D;
+    font-family: Work Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: end;
+   padding-right: 20px;
+}
+
+div>.heading {
+    display: flex;
+    margin: 20px;
+    margin-right: 80px;
+    font-size: 36px;
+    font-weight: 700;
+    justify-content: flex-end;
+}
+
+.phoneimage {
+    z-index: -1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: linear-gradient(180deg, rgba(27, 108, 225, 0) 0%, #1B6CE1 100%);
+    background-blend-mode: overlay;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(27, 108, 225, 0) 0%, #1B6CE1 100%);
+    height: 412px;
+    width: 1110px;
+    left: 21px;
+    position: absolute;
+    top: 162px;
+}
+
+.carousel {
+    position: absolute;
+    height: 48px;
+    top: 235px;
+    width: 1793px;
+    right: 325px;
+}
+
+.headline-card {
+    position: absolute;
+    top: 361px;
+    right: 12px;
+    font-family: sans-serif;
+    align-items: flex-start;
+    background-color: #F8F8F9;
+    width: 412px;
+    height: 333px;
+    padding: 25px;
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 54px;
+    width: 412px;
+}
+
+.content>p {
+    font-size: 18px;
+    color: #898989;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .smartphones {
+        overflow: hidden;
+        height: 750px;
+        margin-bottom: 100px;
+    }
+
+    .headline-card {
+        position: absolute;
+        top: 237px;
+        left: 5px;
+        height: fit-content;
+        width: 97%;
+    }
+
+    .phoneimage {
+        display: flex;
+        justify-content: center;
+        width: 91%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .gradient {
+        height: 534px;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 56px;
+    }
+
+    .content>p {
+        font-size: 23px;
+    }
+
+    .phone-head-content {
+        font-size: 28px;
+    }
+
+    .carousel {
+        display: none;
+    }
+}
