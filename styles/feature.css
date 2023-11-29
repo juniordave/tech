@@ -74,17 +74,18 @@ img {
 }
 
 .feature-card {
+     margin: 0;
      height: 24em !important;
+     transition: box-shadow 0.3s ease;
      width: 320px;
      padding: 15px;
      box-shadow: 0px 0px white;
 }
 
 .feature-card:hover {
-     margin: -30px 0px 0px 0px;
      cursor: pointer;
      box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
-     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
 .features-grid {
@@ -117,8 +118,9 @@ img {
      .container {
           padding: 29px;
      }
+
      .feature-section {
-         
+
           margin-top: 0px;
      }
 }
