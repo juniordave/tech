@@ -80,7 +80,9 @@ h2 {
 
 .kyc-card:hover {
      cursor: pointer;
+     margin-top: -50px;
      box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .kyc-para {
@@ -97,21 +99,17 @@ h2 {
      height: 80px;
 
 }
-
-.kyc-section-2 {
+.kyc-section-2{
      padding-bottom: 300px;
 }
-
 @media screen and (max-width:600px) {
      .kyc-section-1-htag {
           font-size: 26px;
           padding: 0 0 0 30px;
      }
-
-     .kyc-section-2 {
+     .kyc-section-2{
           display: none;
      }
-
      .container-fluid {
           padding: 27px 0px 90px 0;
      }
@@ -128,14 +126,13 @@ h2 {
           padding-top: 30px;
      }
 
-     .kyc-circle-img {
+     .kyc-circle-img  {
           margin: 0;
           position: relative;
           margin-top: 0px;
           margin-left: 105px;
-
+      
      }
-
      .kyc-section {
           height: auto;
      }
