@@ -19,7 +19,7 @@ p {
 }
 
 .ps-section-1 {
-    padding: 50px;
+    padding: 111px 50px;
 }
 
 .ps-section-1-htag {
@@ -111,6 +111,9 @@ section {
     background-repeat: no-repeat;
 }
 
+.accordion-content.active{
+    display: block !important;
+}
 
 .accordion-show-content {
     display: grid;
@@ -144,6 +147,10 @@ section {
         display: block;
     }
     
+    .ps-section-1{
+        padding: 16px;
+    }
+
     .ps-section-1-htag {
         font-size: 23px;
         padding-bottom: 30px;

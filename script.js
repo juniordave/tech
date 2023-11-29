@@ -1,28 +1,31 @@
-// Initialize the default state
-toggleAccordion('section1');
+document.addEventListener("DOMContentLoaded", function () {
+  // Trigger click on the "Featured Products" accordion button
+  var featuredProductsButton = document.querySelector('.accordion-btn[data-section="section1"]');
+  if (featuredProductsButton) {
+      featuredProductsButton.click();
+  }
+});
 
-function toggleAccordion(sectionId) {
+function toggleAccordion(sectionId, button) {
   // Hide all content sections
   const allSections = document.querySelectorAll('.accordion-content');
   allSections.forEach(section => {
-    section.style.display = 'none';
+      section.classList.remove('active');
   });
 
   // Remove 'active' class from all buttons
   const allButtons = document.querySelectorAll('.accordion-btn');
-  allButtons.forEach(button => {
-    button.classList.remove('active');
+  allButtons.forEach(btn => {
+      btn.classList.remove('active');
   });
 
   // Show the selected content section
   const selectedSection = document.getElementById(sectionId);
-  selectedSection.style.display = 'block';
+  selectedSection.classList.add('active');
 
   // Add 'active' class to the clicked button
-  const clickedButton = document.querySelector(`[onclick="toggleAccordion('${sectionId}')]`);
-  clickedButton.classList.add('active');
+  button.classList.add('active');
 }
-
 function toggleNav() {
   var nav = document.getElementById("myTop-nav");
   nav.style.display = (nav.style.display === "none" || nav.style.display === "") ? "block" : "none";

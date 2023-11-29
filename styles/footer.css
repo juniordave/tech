@@ -105,6 +105,9 @@ footer {
         padding: 40px 16px 10px 16px;
         display: block;
     }
+    .footermenu {
+        font-size: 24px;
+    }
 .foot-menu-head{
     display: block;
     font-size: 28px;

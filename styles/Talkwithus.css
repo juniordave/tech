@@ -285,7 +285,7 @@ form>div {
     .cardset {
         display: flex;
         align-items: center;
-        margin-top: 150px;
+        margin: auto;
         padding: 50px;
         flex-direction: column;
         vertical-align: middle;

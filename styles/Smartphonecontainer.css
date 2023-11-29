@@ -104,7 +104,9 @@ div>.heading {
         height: fit-content;
         width: 97%;
     }
-
+.container-smartphones{
+padding-top: 38px;
+}
     .phoneimage {
         display: flex;
         justify-content: center;
