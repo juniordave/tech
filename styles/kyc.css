@@ -22,13 +22,7 @@ h2 {
      font-size: 25px !important;
 }
 
-.kyc-grid-col {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     position: relative;
-     top: 50px;
-}
+
 
 .kyc-section {
      background: linear-gradient(112deg, #01204C 2.86%, #1A6CE0 87.34%);
@@ -70,17 +64,32 @@ h2 {
      justify-content: center;
 }
 
+.kyc-grid-col {
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     position: relative;
+     top: 50px;
+}
+
 .kyc-card {
-     height: 24em !important;
      width: 320px;
-     padding: 15px;
-     box-shadow: 0px 0px white;
+     padding: 21px;
+     margin-top: 64px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: transform 330ms ease-in-out;
+     background-color: #ececec;
+     border-radius: 10px;
+     overflow: hidden;
      top: 30px;
 }
 
 .kyc-card:hover {
      cursor: pointer;
      box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+     transform: scale(1.2);
+     position: relative;
+     z-index: 1;
 }
 
 .kyc-para {
@@ -137,6 +146,6 @@ h2 {
      }
 
      .kyc-section {
-          height: auto;
+          height: auto !important;
      }
 }

@@ -65,31 +65,34 @@ img {
 .feature-card-section {
      display: grid;
      grid-template-columns: auto auto auto auto;
+     justify-content: center;
 }
 
-.feature-card a {
-     position: absolute;
-     bottom: 0;
-     text-decoration: none;
-}
 
 .feature-card {
-     margin: 0;
-     height: 24em !important;
-     transition: box-shadow 0.3s ease;
      width: 320px;
-     padding: 15px;
-     box-shadow: 0px 0px white;
+     padding: 21px;
+     margin-top: 64px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: transform 330ms ease-in-out;
+     background-color: #ececec;
+     border-radius: 10px;
+     overflow: hidden;
 }
 
 .feature-card:hover {
-     cursor: pointer;
      box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
-
+     cursor: pointer;
+     transform: scale(1.2);
+     position: relative;
+     z-index: 1;
 }
 
 .features-grid {
-     padding: 8px;
+     align-items: stretch;
+     padding: 0px 18px;
+     display: flex;
+     justify-content: space-evenly;
 }
 
 
@@ -112,7 +115,7 @@ img {
      }
 
      .features-grid {
-          padding: 46px 0 0 0;
+          padding: 0 0 0 0;
      }
 
      .container {
